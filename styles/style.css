@@ -1,0 +1,178 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+input, select{
+    border: none;
+    background: transparent;
+
+}
+
+html, body{
+    height: 100vw; 
+    width: 100%; 
+}
+
+@media (orientation: portrait) {
+    html, body {
+      height: 100vh; 
+    }
+  }
+
+button{
+    border: none; 
+}
+
+.container{
+    background: #E1D7D4;
+    height: 100vh; 
+    width: 100%;
+}
+
+.content{
+    width: 76%;
+    margin: auto;
+    position: relative;
+    padding-top: 30px;
+}
+
+.title{
+    text-align: center;
+}
+
+.main-title{
+    color: #E34E45;
+    font-family: 'Rubik', serif;
+    margin: 0px 0px 2px 0px; 
+    font-size: 2em; 
+}
+
+.sub-title{
+    font-family: 'Roboto Mono', serif;
+    font-weight: 700; 
+    font-size: 1em; 
+    margin: 0px 0px 30px 0px;
+}
+
+.hidden{
+    z-index: -1; 
+}
+
+.relcontents{
+    position: absolute; 
+    background: transparent; 
+    width: 100%; 
+    background: white; 
+    padding-top: 25px; 
+    border-radius: 5px; 
+}
+
+.spacer{
+    width: 12%; 
+    display: inline-block;
+}
+
+.spacer2{
+    width: 6%; 
+    display: inline-block;
+}
+
+.tables{
+    position: relative;
+    display: inline-flex; 
+    opacity: 1;
+    flex-wrap: wrap; 
+    padding: 1% 0% 1% 0%; 
+    width: 74%; 
+}
+
+.table{
+    position: relative;
+    width: 25%;
+    padding: 25% 0% 0% 0%; 
+    border-radius: 50%; 
+    margin: 0px 8% 25px 0px; 
+}
+
+.cir-num{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%; 
+    left: 50%; 
+}
+
+.form{
+    position: absolute; 
+    background: white; 
+    width: 100%;
+    left: -4%; 
+    padding: 30px 10px 0px 10px;  
+    border-radius: 5px; 
+    box-shadow: 0px 0px 31px 1px rgba(0,0,0,0.3);
+    opacity: 0;
+}
+
+.exit{
+    position: absolute;
+    font-size: 1em;
+    top: 10px;
+    right: 10px; 
+    color: #CCC;
+}
+
+.form-title{
+    font-family: 'Rubik', serif; 
+    color: #E34E45;
+    font-size: 1em; 
+    margin: 0px 0px 20px 0px; 
+}
+
+.in{
+    display: block; 
+    width: 100%;
+    padding: 10px 0px; 
+    border-bottom: 1px solid #EEE; 
+}
+
+.table-num-label{
+    margin: 0px 0px 15px 0px; 
+    font-family: 'Roboto Mono', serif;
+    font-size: 0.75em; 
+    border: none;
+}
+
+.num-select{
+    margin: 0px 0px 10px 0px;
+}
+
+.save{
+    margin-bottom: 15px; 
+    background: #008000;
+    box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.3);
+    border-bottom: none;
+}
+
+.available{
+    background: #EEE;
+}
+
+
+.reserved{
+    background: #ADAAAA;
+}
+
+
+@media only screen and (min-width: 679px){
+    .relcontents{
+        width: 33%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        margin-top: 150px;
+    }
+
+    body, html{
+        height: 100vh;
+    }
+}

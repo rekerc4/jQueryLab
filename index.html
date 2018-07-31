@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <section class="container" id="container">
+        <section class="content" id="content">
+            <div class="title" id="title">
+                <h1 class="main-title" id="main-title">Table Finder</h1>
+                <h3 class="sub-title" id="sub-title">Pick Your Table Now</h3>
+            </div>
+            <section class="relcontents" id="relcontents">
+                    <div class="spacer" id="spacer"></div>
+                    <section class="tables" id="tables">
+                       
+                        <div class="table available" id="table1"><p class="cir-num">1</p></div>
+                        <div class="table available" id="table2"><p class="cir-num">2</p></div>
+                        <div class="table available" id="table3"><p class="cir-num">3</p></div>
+                        <div class="table available" id="table4"><p class="cir-num">4</p></div>
+                        <div class="table available" id="table5"><p class="cir-num">5</p></div>
+                        <div class="table available" id="table6"><p class="cir-num">6</p></div>
+                        <div class="table available" id="table7"><p class="cir-num">7</p></div>
+                        <div class="table available" id="table8"><p class="cir-num">8</p></div>
+                        <div class="table available" id="table9"><p class="cir-num">9</p></div>
+                        
+            </section>
+            <div class="spacer2" id="spacer"></div>
+            </section>
+                <form class="hidden form" id="form" onsubmit="return false">
+                    <i class="exit material-icons">close</i>
+                    <h2 class="form-title" id="form-title">New Reservation</h2>
+                    <label for="table-number" name="table-number" class="in table-num-label" id="table-num-label">
+                        Table Number: &nbsp; 
+                    </label>
+                    
+                    <input type="text" name="name" placeholder="Yasmine" class="in name" id="name">
+                    <input type="text" name="phone" placeholder="248-222-2222" class="in phone" id="phone">
+                    <select name="save" class="in num-select" id="numSelect">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                          </select>
+                    <button type="submit" value="submit" name="save" class="in save btn" id="save">
+                        SAVE
+                    </button>
+
+                </form>
+                <!--For pop up to add in Second part maybe.-->
+               <!-- <section class="num-select" id="num-select">
+                    <input type="radio" name="number" value="1" class="number" id="num1">
+                    <input type="radio" name="number" value="1" class="number" id="num2">
+                    <input type="radio" name="number" value="1" class="number" id="num3">
+                    <input type="radio" name="number" value="1" class="number" id="num4">
+                    <input type="radio" name="number" value="1" class="number" id="num5">
+                    <input type="radio" name="number" value="1" class="number" id="num6">
+                    <input type="radio" name="number" value="1" class="number" id="num7">
+                    <input type="radio" name="number" value="1" class="number" id="num8">
+                    <input type="radio" name="number" value="1" class="number" id="num9">
+                    <input type="radio" name="number" value="1" class="number" id="num10">
+                    <input type="radio" name="number" value="1" class="number" id="num11">
+                    <input type="radio" name="number" value="1" class="number" id="num12">
+                    <input type="radio" name="number" value="1" class="number" id="num13">
+                    <input type="radio" name="number" value="1" class="number" id="num14">
+                    <input type="radio" name="number" value="1" class="number" id="num15">
+                    <input type="radio" name="number" value="1" class="number" id="num16">
+                    <input type="radio" name="number" value="1" class="number" id="num17">
+                </section>-->
+                <!--For pop up to add in Second part maybe.-->
+                
+        </section>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/javascript.js"></script>
+</body>
+</html>
