@@ -56,9 +56,6 @@ button{
     margin: 0px 0px 30px 0px;
 }
 
-.hidden{
-    z-index: -1; 
-}
 
 .relcontents{
     position: absolute; 
@@ -106,9 +103,16 @@ button{
 
 .mouse-over{
     position: absolute;
-    width: 80%; 
-    height: 40px; 
+    width: 200%; 
+    height: 45%; 
     font-family: 'roboto mono', sans-serif;
+    background: rgba(173,170,170, 0.8); 
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    top: 90%;
+    left: 50%;
+    border-radius: 5px;
+    border: 1px solid;
 }
 
 .form{
@@ -164,10 +168,15 @@ button{
 }
 
 .save {
-    animation: shake 1s cubic-bezier(.36,.07,.19,.97) infinite both paused;
+    animation: shake 1s cubic-bezier(.36,.07,.19,.97) infinite both;
+    
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
+  }
+
+  .pause{
+    animation-play-state: paused;
   }
   
   @keyframes shake {
@@ -207,15 +216,33 @@ button{
     display: inline-block; 
 }
 
+.hidden{
+    z-index: -1; 
+}
+
+.not-visible{
+    display: none;
+}
+
 @media only screen and (min-width: 679px){
     .relcontents{
-        width: 33%;
+        width: 66%;
         transform: translate(-50%, -50%);
         left: 50%;
-        margin-top: 150px;
+        margin-top: 25%;
+    }
+
+    .main-title{
+        font-size: 3em;
+    }
+
+    .sub-title{
+        font-size: 2em;
     }
 
     body, html{
         height: 100vh;
     }
 }
+
+

@@ -17,7 +17,6 @@ function registerEventHandlers(){
         // $("body").on("mouseenter mouseleave", "#tables .table", function(){
         //     console.log($(carryData).data("name"));
         // })
-        console.log(e); 
        
         
         currentT = e.currentTarget.id;
@@ -50,12 +49,12 @@ function registerEventHandlers(){
     });
 
     $("#save").click(function(e){
-        console.log(currentT); 
+        shake();
         carryData = $(e.target);
         carryData.data("name", $("#name").val()); 
         carryData.data("num", $("#numSelect").val());
         $("#form").fadeTo(2000, 0.0);
-        $("#form").toggleClass("hidden");
+        
         let theTable = "#table" + tableNum;
         $(theTable).toggleClass("reserved");
         newMOver();
@@ -65,16 +64,34 @@ function registerEventHandlers(){
         let cId = "#" + currentT;
         let na = carryData.data("name");
         let nu = carryData.data("num");
-        $(cId).mouseover(function(){
-            console.log(typeof na);
-            console.log(nu);
+        console.log(cId);
+
+        $("body").on("mouseover mouseleave", `${cId}, ${cId} > div`, (e) =>{
+            console.log(na);
+            $(cId).children("div").eq(0).toggleClass("hidden");
+            $(cId).children("div").eq(0).toggleClass("not-visible");
         })
 
-        $(cId).mouseleave(function(){
-            console.log(na);
-            console.log(typeof nu);
-        })
+        // $(cId).mouseover(function(){
+        //     $(cId).children("div").eq(0).toggleClass("hidden");
+        //     $(cId).children("div").eq(0).toggleClass("not-visible");
+        // })
+
+        // $(cId).mouseleave(function(){
+        //     $(cId).children("div").eq(0).toggleClass("hidden");
+        //     $(cId).children("div").eq(0).toggleClass("not-visible");
+        // })
            console.log(currentT);
+    }
+
+    function shake(){
+        $("#save").toggleClass("pause")
+        setTimeout(function(){ 
+        $("#save").toggleClass("pause");
+        $("#form").toggleClass("hidden");
+     }, 1000);
+        
+        
     }
   
     // $("body").on("click", "#tables .table p", (e) => {
