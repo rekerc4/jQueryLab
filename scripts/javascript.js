@@ -64,24 +64,17 @@ function registerEventHandlers(){
         let cId = "#" + currentT;
         let na = carryData.data("name");
         let nu = carryData.data("num");
+        let numer = "<p> Name : " + nu + "</p>";
+        let nama = "<p> Size of Party : " + na + "</p>"; 
+        $(cId).children("div").eq(0).append(nama);
+        $(cId).children("div").eq(0).append(numer);
         console.log(cId);
 
         $("body").on("mouseover mouseleave", `${cId}, ${cId} > div`, (e) =>{
-            console.log(na);
             $(cId).children("div").eq(0).toggleClass("hidden");
             $(cId).children("div").eq(0).toggleClass("not-visible");
         })
-
-        // $(cId).mouseover(function(){
-        //     $(cId).children("div").eq(0).toggleClass("hidden");
-        //     $(cId).children("div").eq(0).toggleClass("not-visible");
-        // })
-
-        // $(cId).mouseleave(function(){
-        //     $(cId).children("div").eq(0).toggleClass("hidden");
-        //     $(cId).children("div").eq(0).toggleClass("not-visible");
-        // })
-           console.log(currentT);
+         
     }
 
     function shake(){
